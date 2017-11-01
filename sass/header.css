@@ -1,0 +1,27 @@
+#header {
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  background: #f9f9f9; }
+  #header span {
+    color: #555; }
+  #header a {
+    text-decoration: none; }
+    #header a:hover {
+      color: red;
+      text-decoration: underline; }
+  #header .left {
+    float: left; }
+  #header .right {
+    float: right; }
+    #header .right ul {
+      list-style: none;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #header .right ul li {
+        height: 100%;
+        padding: 0 8px; }
+
+/*# sourceMappingURL=header.css.map */
