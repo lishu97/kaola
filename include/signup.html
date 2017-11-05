@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" type="text/css" href="../css/signIn.css"/>
+	<title>Document</title>
+</head>
+<body>
+	<div id="shelter"></div>
+	<div id="container">
+		<form>
+			<div id="title">登录框<a href="javascript:void(0)" id = "shutdown">关闭</a></div>
+			<div>用户名<input type="text" name="" id = "userName" value="" /></div>
+			<div>密码<input type="password" name=""  id = "password" value="" /></div>
+			<div>验证码<input type="text" name="" id = "confirm0" value="" /></div>
+			<div>
+				<a href="javascript:void(0)" id = "change">换验证码</a>
+				<span id = "confirm1"></span>
+			</div>
+			<div>
+				<input type="checkbox" name="" id="remember" value="" />
+				记住用户名
+				<input type="button" name="submit" id="submit" value="登录" />
+			</div>
+		</form>
+	</div>
+	<script src="../lib/jquery/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+		var stop = $("#shelter");
+		//设置宽高为窗口高度
+		stop.css("height",$(window).height());
+		stop.css("width",$(window).width());
+</script>
+</body>
+</html>

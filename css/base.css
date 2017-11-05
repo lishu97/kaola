@@ -4,6 +4,7 @@
 	color: #333;
 	font-size: 12px;
 	box-sizing: border-box;
+	overflow: auto !important;
 }
 ul{
 	list-style: none;
@@ -11,4 +12,7 @@ ul{
 #box{
 	width: 1090px;
     margin: 0 auto;
+}
+.hot{
+	color: rgb(233,27,81);
 }

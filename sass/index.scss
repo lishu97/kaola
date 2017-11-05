@@ -1,0 +1,477 @@
+$logo : rgb(233,27,81);
+#banner{
+    .imgs{li{}}
+    .circles{
+        position:absolute;
+        bottom:15px;
+        width:100%;
+        height:30px;
+        text-align: center;
+        span{
+            background: rgba(10,10,10,.6);
+            width:20px; 
+            height:20px; 
+            text-align: center;
+            line-height: 20px;
+            display:inline-block; 
+            margin:6px; 
+            border-radius:50%;
+            color: white;
+            font-size: 16px;
+            font-weight: bolder;
+            cursor: default;
+        }
+        span.current{
+            background: #f00;
+        }
+    }
+    .prev,.next{
+        width: 34px;
+        height:64px;
+        background:#000;
+        font-size:30px;
+        position:absolute;
+        top:0;
+        bottom:0;
+        margin:auto;
+        left:330px;
+        color:#fff;
+        text-align:center;
+        line-height:64px;
+        opacity:0.6;
+        cursor: default;
+        &:hover{
+            opacity:1;
+        }
+    }
+    .next{
+        left:auto;
+        right:140px;
+    }
+}
+#gap{
+    overflow: hidden;
+    font-size: 12px;
+    height: 42px;
+    line-height: 42px;
+    border:1px solid #DEDEDE;
+    ul{
+        float: left;
+        li{
+            margin-right: 20px;
+            float: left;
+            color: #999;
+            i{
+                font-size: 24px;
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+            span{
+                color: #999;
+            }
+            &:hover{
+                i,span{
+                    color: $logo;
+                }
+            }
+        }
+    }
+    #box>span{
+        float: right;
+        i{
+            color: $logo;
+            vertical-align:middle;
+        }
+        a{
+            text-decoration: none;
+            color: $logo;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        
+    }
+}
+#container{
+    padding-top:20px ;
+    padding-bottom: 80px;
+    background:rgb(246,246,246);
+    overflow: hidden;
+    #box{
+        #ad{
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            li{
+                float: left;
+            }
+        }
+        
+    }
+    .title{
+        height: 60px;
+        line-height: 60px;
+        overflow: hidden;
+        .left{
+            float: left;
+            height: 30px;
+            h2{
+                float: left;
+                font-size: 24px;
+                margin-right: 20px;
+                font-family: "arial black";
+                font-weight: bolder;
+            }
+            &>div{
+                float: left;
+                color: rgb(100,100,100);
+                display: flex;
+                align-items: center;
+                .timer{
+                    height: 20px;
+                    width: 20px;
+                    text-align: center;
+                    line-height: 20px;
+                    background: #000000;
+                    border-radius: 50%;
+                    color: rgb(190,190,190);
+                    margin: 0 2px;
+                    &:first-child{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .right{
+            float: right;
+            line-height: 60px;
+            a{
+                 text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    //*************************************限时抢购
+    #limitedTime{
+        overflow: hidden;
+        &>.left{
+            float: left;
+            width: 80%;  
+            ul{
+                border: 1px solid #DEDEDE;
+                border-top: 3px solid black;
+                border-bottom:none;
+                overflow: hidden;
+                li{
+                    width: 50%;
+                    float: left;
+                    box-sizing: border-box;
+                    border-right: 1px solid #DEDEDE;
+                    border-bottom: 1px solid #DEDEDE;
+                    &:nth-of-type(2n){
+                        border-right:none;
+                    }
+                    &:nth-of-type(1n+3){
+//                      border-bottom:none;
+                    }
+                    dl{
+                        overflow: hidden;
+                        display: flex;
+                        dt{
+                            height: 188px;
+                            float: left;
+                            &:hover{
+                                opacity: .6;
+                            }
+                        }
+                        dd{
+                            padding: 20px;
+                            padding-bottom: 0;
+                            float: right;
+                            h3{
+                                margin-bottom: 10px;
+                                a{
+                                    font-size: 18px;
+                                    text-decoration: none;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                            };
+                            div:nth-of-type(1){
+                                line-height: 18px;
+                                margin-bottom: 20px;
+                                a{
+                                    color: #BEBEBE;
+                                    text-decoration: none;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                            span.curPrice{
+                                color: $logo;
+                                font-weight: bolder;
+                                font-size: 26px;
+                            }
+                            span.prePrice{
+                                font-size: 16px;
+                                color: #BEBEBE;
+                                text-decoration: line-through;
+                            }
+                            &>div:last-child{
+                                display: flex;
+                                justify-content: space-between;
+                                div{
+                                    width: 100px;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    text-align: center;
+                                    border-radius:10px;
+                                    border: 1px solid palevioletred;
+                                    margin-top: 10px;
+                                    background: pink;
+                                    color: $logo;
+                                }
+                                p{
+                                    height: 28px;
+                                    width: 82px;
+                                    background: $logo;
+                                    color: white;
+                                    font-size:16px; 
+                                    text-align: center;
+                                    line-height: 28px;
+                                    
+                                    &:hover{
+                                        opacity: .6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                   
+                }
+            } 
+            
+            
+        }
+        &>.right{
+            float: left;
+            height: 379px;
+            width: 20%;
+            img{
+                width: 100%;
+                height: 100%;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+    #newDaily{
+        overflow: hidden;
+        ul{
+            li{
+                float: left;
+                box-sizing: border-box;
+                width: 16.66%;
+                border-bottom: 1px solid #DEDEDE;
+                border-right:1px solid #DEDEDE;
+                &:nth-of-type(6n){
+                    border-right: none;
+                }
+                &:nth-of-type(n+7){
+                    border-bottom: none;
+                }
+                dl{
+                    width: 100%;
+                    dt{
+                        text-align:center; 
+                        padding: 10px 0;
+                    }
+                    dd{
+                        width: 100%;
+                        text-align: center;
+                        div{
+                            width: 100%;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            padding: 10px;
+                        }
+                        .curPrice{
+                            color: $logo;
+                            font-weight:bolder ;
+                            font-size: 18px;
+                            margin-right: 10px;
+                        }
+                        .prePrice{
+                            color: #999;
+                            font-size: 12px;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #hotBrand{
+        overflow: hidden;
+        .container{
+            display: flex;
+             .carousel{
+                float: left;
+                height: 270px;
+                flex: 1;
+            }
+            ul{
+                width: 900px;
+                float: right;
+                li{
+                    box-sizing: border-box;
+                    float: left;
+                    height: 50%;
+                    width: 180px;
+                    box-sizing: border-box;
+                    background: white;
+                    text-align: center;
+                    border-right: 1px solid #DEDEDE;
+                    border-bottom: 1px solid #DEDEDE;
+                    &:nth-of-type(5n){
+                        border-right:none;
+                    }
+                    &:nth-of-type(n+6){
+                        border-bottom:none;
+                    }
+                    div{
+                        margin: 10px 0;
+                    }
+                   
+                }
+            }
+        }
+       
+    }
+    .special{
+        .title{
+            .left{
+                div{
+                    a{
+                        margin: 0 10px;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .right{
+                span{
+                    padding-left: 10px;   
+                }
+            }
+        }
+        .container{
+            .left{
+                float: left;
+                background: url(../img/index/motherAndBaby1.jpg);
+                height: 440px;
+                width: 246px;
+                padding: 30px 24px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                
+                $size : 60px;
+                a{
+                    display: block;
+                    height: $size;
+                    text-decoration: none;
+                }
+                p{
+                    height: $size;
+                    width: $size;
+                    border-radius: 50%;
+                    background: white;
+                    text-align: center;
+                    float: left;
+                    line-height: $size;
+                    &:hover{
+                        background: rgb(253,225,231);
+                    }
+                }
+            }
+            .center{
+                float: left;
+                ul{
+                    width: 492px;
+                    height: 440px;
+                    li{
+                        height: 50%;
+                        width: 50%;
+                        float: left;
+                        position: relative;
+                        background: white;
+                        text-align: center;
+                        border-right: 1px solid #DEDEDE;
+                        border-bottom: 1px solid #DEDEDE;
+                        &:nth-of-type(5n){
+                            border-right:none;
+                        }
+                        &:nth-of-type(n+6){
+                            border-bottom:none;
+                        }
+                        &:hover{
+                            img{
+                                 opacity: 0.6;
+                            }
+                        }
+                        h3{
+                            font-size: 18px;
+                            margin-top: 22px;
+                        }
+                        p{
+                            color: #999999;
+                            margin-top: 15px;
+                        }
+                        img{
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+                 
+            }
+            .right{
+                box-sizing: border-box;
+                padding: 20px;
+                float: left;
+                h3{
+                    margin: 10px 0;
+                }
+                ul {
+                    li{
+                        width: 300px;
+                        dl{
+                            dt{
+                                float: left;
+                            }
+                            dd{
+                                float: left;
+                                p{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

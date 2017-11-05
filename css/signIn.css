@@ -1,0 +1,16 @@
+#shelter { width: 100%; background: black; opacity: 0.3; z-index: 1; position: fixed; top: 0; left: 0; }
+
+#container { height: 270px; width: 300px; border: 1px solid; position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; z-index: 99; background: white; }
+#container #title { padding: 10px; margin: 0; }
+#container form div { height: 30px; line-height: 30px; margin: 10px 0; padding-left: 15px; }
+#container form div input { float: right; margin-right: 30px; }
+#container form div #remember { float: none; margin-right: 0px; }
+#container form div #submit { font-size: 16px; padding: 5px; float: none; width: 126px; margin-left: 15px; }
+#container span { display: inline-block; width: 100px; height: 20px; border: 1px solid; text-align: center; }
+#container #shutdown { right: 15px; }
+
+#title { border-bottom: 1px solid; cursor: pointer; }
+
+#title a { position: absolute; right: 0; }
+
+#confirm1 { position: absolute; left: 98px; top: 175px; line-height: 18px; }

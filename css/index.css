@@ -1,0 +1,344 @@
+#banner .circles {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  height: 30px;
+  text-align: center; }
+  #banner .circles span {
+    background: rgba(10, 10, 10, 0.6);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    display: inline-block;
+    margin: 6px;
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: default; }
+  #banner .circles span.current {
+    background: #f00; }
+#banner .prev, #banner .next {
+  width: 34px;
+  height: 64px;
+  background: #000;
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 330px;
+  color: #fff;
+  text-align: center;
+  line-height: 64px;
+  opacity: 0.6;
+  cursor: default; }
+  #banner .prev:hover, #banner .next:hover {
+    opacity: 1; }
+#banner .next {
+  left: auto;
+  right: 140px; }
+
+#gap {
+  overflow: hidden;
+  font-size: 12px;
+  height: 42px;
+  line-height: 42px;
+  border: 1px solid #DEDEDE; }
+  #gap ul {
+    float: left; }
+    #gap ul li {
+      margin-right: 20px;
+      float: left;
+      color: #999; }
+      #gap ul li i {
+        font-size: 24px;
+        vertical-align: middle;
+        margin-right: 5px; }
+      #gap ul li span {
+        color: #999; }
+      #gap ul li:hover i, #gap ul li:hover span {
+        color: #e91b51; }
+  #gap #box > span {
+    float: right; }
+    #gap #box > span i {
+      color: #e91b51;
+      vertical-align: middle; }
+    #gap #box > span a {
+      text-decoration: none;
+      color: #e91b51; }
+      #gap #box > span a:hover {
+        text-decoration: underline; }
+
+#container {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  background: #f6f6f6;
+  overflow: hidden; }
+  #container #box #ad {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    #container #box #ad li {
+      float: left; }
+  #container .title {
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden; }
+    #container .title .left {
+      float: left;
+      height: 30px; }
+      #container .title .left h2 {
+        float: left;
+        font-size: 24px;
+        margin-right: 20px;
+        font-family: "arial black";
+        font-weight: bolder; }
+      #container .title .left > div {
+        float: left;
+        color: #646464;
+        display: flex;
+        align-items: center; }
+        #container .title .left > div .timer {
+          height: 20px;
+          width: 20px;
+          text-align: center;
+          line-height: 20px;
+          background: #000000;
+          border-radius: 50%;
+          color: #bebebe;
+          margin: 0 2px; }
+          #container .title .left > div .timer:first-child {
+            margin-left: 10px; }
+    #container .title .right {
+      float: right;
+      line-height: 60px; }
+      #container .title .right a {
+        text-decoration: none; }
+        #container .title .right a:hover {
+          text-decoration: underline; }
+  #container #limitedTime {
+    overflow: hidden; }
+    #container #limitedTime > .left {
+      float: left;
+      width: 80%; }
+      #container #limitedTime > .left ul {
+        border: 1px solid #DEDEDE;
+        border-top: 3px solid black;
+        border-bottom: none;
+        overflow: hidden; }
+        #container #limitedTime > .left ul li {
+          width: 50%;
+          float: left;
+          box-sizing: border-box;
+          border-right: 1px solid #DEDEDE;
+          border-bottom: 1px solid #DEDEDE; }
+          #container #limitedTime > .left ul li:nth-of-type(2n) {
+            border-right: none; }
+          #container #limitedTime > .left ul li dl {
+            overflow: hidden;
+            display: flex; }
+            #container #limitedTime > .left ul li dl dt {
+              height: 188px;
+              float: left; }
+              #container #limitedTime > .left ul li dl dt:hover {
+                opacity: .6; }
+            #container #limitedTime > .left ul li dl dd {
+              padding: 20px;
+              padding-bottom: 0;
+              float: right; }
+              #container #limitedTime > .left ul li dl dd h3 {
+                margin-bottom: 10px; }
+                #container #limitedTime > .left ul li dl dd h3 a {
+                  font-size: 18px;
+                  text-decoration: none; }
+                  #container #limitedTime > .left ul li dl dd h3 a:hover {
+                    text-decoration: underline; }
+              #container #limitedTime > .left ul li dl dd div:nth-of-type(1) {
+                line-height: 18px;
+                margin-bottom: 20px; }
+                #container #limitedTime > .left ul li dl dd div:nth-of-type(1) a {
+                  color: #BEBEBE;
+                  text-decoration: none; }
+                  #container #limitedTime > .left ul li dl dd div:nth-of-type(1) a:hover {
+                    text-decoration: underline; }
+              #container #limitedTime > .left ul li dl dd span.curPrice {
+                color: #e91b51;
+                font-weight: bolder;
+                font-size: 26px; }
+              #container #limitedTime > .left ul li dl dd span.prePrice {
+                font-size: 16px;
+                color: #BEBEBE;
+                text-decoration: line-through; }
+              #container #limitedTime > .left ul li dl dd > div:last-child {
+                display: flex;
+                justify-content: space-between; }
+                #container #limitedTime > .left ul li dl dd > div:last-child div {
+                  width: 100px;
+                  height: 20px;
+                  line-height: 20px;
+                  text-align: center;
+                  border-radius: 10px;
+                  border: 1px solid palevioletred;
+                  margin-top: 10px;
+                  background: pink;
+                  color: #e91b51; }
+                #container #limitedTime > .left ul li dl dd > div:last-child p {
+                  height: 28px;
+                  width: 82px;
+                  background: #e91b51;
+                  color: white;
+                  font-size: 16px;
+                  text-align: center;
+                  line-height: 28px; }
+                  #container #limitedTime > .left ul li dl dd > div:last-child p:hover {
+                    opacity: .6; }
+    #container #limitedTime > .right {
+      float: left;
+      height: 379px;
+      width: 20%; }
+      #container #limitedTime > .right img {
+        width: 100%;
+        height: 100%; }
+        #container #limitedTime > .right img:hover {
+          opacity: 0.6; }
+  #container #newDaily {
+    overflow: hidden; }
+    #container #newDaily ul li {
+      float: left;
+      box-sizing: border-box;
+      width: 16.66%;
+      border-bottom: 1px solid #DEDEDE;
+      border-right: 1px solid #DEDEDE; }
+      #container #newDaily ul li:nth-of-type(6n) {
+        border-right: none; }
+      #container #newDaily ul li:nth-of-type(n+7) {
+        border-bottom: none; }
+      #container #newDaily ul li dl {
+        width: 100%; }
+        #container #newDaily ul li dl dt {
+          text-align: center;
+          padding: 10px 0; }
+        #container #newDaily ul li dl dd {
+          width: 100%;
+          text-align: center; }
+          #container #newDaily ul li dl dd div {
+            width: 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 10px; }
+          #container #newDaily ul li dl dd .curPrice {
+            color: #e91b51;
+            font-weight: bolder;
+            font-size: 18px;
+            margin-right: 10px; }
+          #container #newDaily ul li dl dd .prePrice {
+            color: #999;
+            font-size: 12px;
+            text-decoration: line-through; }
+  #container #hotBrand {
+    overflow: hidden; }
+    #container #hotBrand .container {
+      display: flex; }
+      #container #hotBrand .container .carousel {
+        float: left;
+        height: 270px;
+        flex: 1; }
+      #container #hotBrand .container ul {
+        width: 900px;
+        float: right; }
+        #container #hotBrand .container ul li {
+          box-sizing: border-box;
+          float: left;
+          height: 50%;
+          width: 180px;
+          box-sizing: border-box;
+          background: white;
+          text-align: center;
+          border-right: 1px solid #DEDEDE;
+          border-bottom: 1px solid #DEDEDE; }
+          #container #hotBrand .container ul li:nth-of-type(5n) {
+            border-right: none; }
+          #container #hotBrand .container ul li:nth-of-type(n+6) {
+            border-bottom: none; }
+          #container #hotBrand .container ul li div {
+            margin: 10px 0; }
+  #container .special .title .left div a {
+    margin: 0 10px;
+    text-decoration: none; }
+    #container .special .title .left div a:hover {
+      text-decoration: underline; }
+  #container .special .title .right span {
+    padding-left: 10px; }
+  #container .special .container .left {
+    float: left;
+    background: url(../img/index/motherAndBaby1.jpg);
+    height: 440px;
+    width: 246px;
+    padding: 30px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; }
+    #container .special .container .left a {
+      display: block;
+      height: 60px;
+      text-decoration: none; }
+    #container .special .container .left p {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      background: white;
+      text-align: center;
+      float: left;
+      line-height: 60px; }
+      #container .special .container .left p:hover {
+        background: #fde1e7; }
+  #container .special .container .center {
+    float: left; }
+    #container .special .container .center ul {
+      width: 492px;
+      height: 440px; }
+      #container .special .container .center ul li {
+        height: 50%;
+        width: 50%;
+        float: left;
+        position: relative;
+        background: white;
+        text-align: center;
+        border-right: 1px solid #DEDEDE;
+        border-bottom: 1px solid #DEDEDE; }
+        #container .special .container .center ul li:nth-of-type(5n) {
+          border-right: none; }
+        #container .special .container .center ul li:nth-of-type(n+6) {
+          border-bottom: none; }
+        #container .special .container .center ul li:hover img {
+          opacity: 0.6; }
+        #container .special .container .center ul li h3 {
+          font-size: 18px;
+          margin-top: 22px; }
+        #container .special .container .center ul li p {
+          color: #999999;
+          margin-top: 15px; }
+        #container .special .container .center ul li img {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: 0 auto; }
+  #container .special .container .right {
+    box-sizing: border-box;
+    padding: 20px;
+    float: left; }
+    #container .special .container .right h3 {
+      margin: 10px 0; }
+    #container .special .container .right ul li {
+      width: 300px; }
+      #container .special .container .right ul li dl dt {
+        float: left; }
+      #container .special .container .right ul li dl dd {
+        float: left; }
+        #container .special .container .right ul li dl dd p {
+          font-size: 14px; }

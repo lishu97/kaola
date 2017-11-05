@@ -1,0 +1,30 @@
+#footer .top #box ul:first-child { width: 100%; list-style: none; display: flex; justify-content: center; align-items: center; border-bottom: 1px solid #EEEEEE; padding: 40px 0; }
+#footer .top #box ul:first-child strong { font-size: 24px; display: block; }
+#footer .top #box ul:first-child li { box-sizing: border-box; width: 25%; text-align: center; }
+#footer .top #box ul:first-child li i { font-size: 66px; }
+#footer .top #box ul:first-child li strong { margin-bottom: 5px; }
+#footer .top .links { width: 100%; list-style: none; display: flex; justify-content: center; padding: 40px 0; }
+#footer .top .links li { width: 135px; box-sizing: border-box; padding-left: 25px; border-right: 1px solid #EEEEEE; }
+#footer .top .links li strong { font-size: 20px; display: block; margin-bottom: 14px; }
+#footer .top .links li > a { height: auto; width: auto; text-decoration: none; line-height: 26px; }
+#footer .top .links li > a:hover { text-decoration: underline; }
+#footer .top .links li dl { float: left; }
+#footer .top .links li:first-child { width: 250px; padding: 0; }
+#footer .top .links li:first-child div { display: flex; align-items: center; justify-content: center; }
+#footer .top .links li:first-child div i { margin-left: 5px; position: relative; }
+#footer .top .links li:first-child div i img { display: none; border: 1px solid #DEDEDE; padding: 5px; position: absolute; top: 35px; right: -40px; background: white; }
+#footer .top .links li:first-child div i:nth-of-type(1) { font-size: 30px; color: #f0001c; }
+#footer .top .links li:first-child div i:nth-of-type(2) { font-size: 30px; color: #00aa00; }
+#footer .top .links li:first-child div i:nth-of-type(3) { font-size: 30px; color: #07c193; }
+#footer .top .links li:nth-of-type(6) { border-right: none; }
+#footer .top .links li:last-child { width: 250px; text-align: center; padding: 0; border-right: none; }
+#footer .top .links li:last-child dl { padding: 0 8px; }
+#footer .bottom { text-align: center; background: #333333; padding-top: 20px; height: 150px; }
+#footer .bottom div { line-height: 26px; }
+#footer .bottom div span { color: #c2c2c2; }
+#footer .bottom div a { text-decoration: none; color: #c2c2c2; }
+#footer .bottom div a:hover { text-decoration: underline; }
+#footer .bottom .second span { margin: 0 14px; }
+#footer .bottom .third img { margin-right: 5px; }
+#footer .bottom .forth { margin-top: 10px; }
+#footer .bottom .forth img { height: 26px; margin: 0 6px; }
