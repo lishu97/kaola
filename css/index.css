@@ -240,6 +240,19 @@
             text-decoration: line-through; }
   #container #hotBrand {
     overflow: hidden; }
+    #container #hotBrand .title .right {
+      position: relative; }
+      #container #hotBrand .title .right i {
+        top: 0;
+        padding-left: 6px;
+        font-size: 12px;
+        font-weight: bolder;
+        text-decoration: none;
+        position: absolute;
+        transition: 1s all;
+        transform-origin: center; }
+        #container #hotBrand .title .right i:hover {
+          transform: rotateY(360deg); }
     #container #hotBrand .container {
       display: flex; }
       #container #hotBrand .container .carousel {
@@ -272,73 +285,153 @@
       text-decoration: underline; }
   #container .special .title .right span {
     padding-left: 10px; }
-  #container .special .container .left {
-    float: left;
-    background: url(../img/index/motherAndBaby1.jpg);
-    height: 440px;
-    width: 246px;
-    padding: 30px 24px;
+  #container .special .container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap; }
-    #container .special .container .left a {
-      display: block;
-      height: 60px;
-      text-decoration: none; }
-    #container .special .container .left p {
-      height: 60px;
-      width: 60px;
-      border-radius: 50%;
-      background: white;
-      text-align: center;
+    border-top: 3px solid black; }
+    #container .special .container .left {
       float: left;
-      line-height: 60px; }
-      #container .special .container .left p:hover {
-        background: #fde1e7; }
-  #container .special .container .center {
-    float: left; }
-    #container .special .container .center ul {
-      width: 492px;
-      height: 440px; }
-      #container .special .container .center ul li {
-        height: 50%;
-        width: 50%;
-        float: left;
-        position: relative;
+      background: url(../img/index/motherAndBaby1.jpg);
+      height: 440px;
+      width: 246px;
+      padding: 30px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap; }
+      #container .special .container .left a {
+        display: block;
+        height: 60px;
+        text-decoration: none; }
+      #container .special .container .left p {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
         background: white;
         text-align: center;
-        border-right: 1px solid #DEDEDE;
-        border-bottom: 1px solid #DEDEDE; }
-        #container .special .container .center ul li:nth-of-type(5n) {
-          border-right: none; }
-        #container .special .container .center ul li:nth-of-type(n+6) {
-          border-bottom: none; }
-        #container .special .container .center ul li:hover img {
-          opacity: 0.6; }
-        #container .special .container .center ul li h3 {
-          font-size: 18px;
-          margin-top: 22px; }
-        #container .special .container .center ul li p {
-          color: #999999;
-          margin-top: 15px; }
-        #container .special .container .center ul li img {
+        float: left;
+        line-height: 60px; }
+        #container .special .container .left p:hover {
+          background: #fde1e7; }
+    #container .special .container .center {
+      float: left;
+      flex: 1; }
+      #container .special .container .center ul {
+        width: 100%;
+        height: 440px; }
+        #container .special .container .center ul li {
+          height: 50%;
+          width: 50%;
+          float: left;
+          position: relative;
+          background: white;
+          text-align: center;
+          border-right: 1px solid #DEDEDE;
+          border-bottom: 1px solid #DEDEDE; }
+          #container .special .container .center ul li:nth-of-type(5n) {
+            border-right: none; }
+          #container .special .container .center ul li:nth-of-type(n+6) {
+            border-bottom: none; }
+          #container .special .container .center ul li:hover img {
+            opacity: 0.6; }
+          #container .special .container .center ul li h3 {
+            font-size: 18px;
+            margin-top: 22px; }
+          #container .special .container .center ul li p {
+            color: #999999;
+            margin-top: 15px; }
+          #container .special .container .center ul li img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto; }
+    #container .special .container .right {
+      height: 440px;
+      box-sizing: border-box;
+      padding: 0 20px;
+      position: relative;
+      float: left;
+      background: white;
+      border-right: 1px solid #DEDEDE;
+      border-bottom: 1px solid #DEDEDE; }
+      #container .special .container .right h3 {
+        margin: 10px 0;
+        font-size: 22px; }
+      #container .special .container .right .carousel {
+        height: 100%; }
+        #container .special .container .right .carousel .pages li {
+          height: 100%; }
+          #container .special .container .right .carousel .pages li dl {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px 0 20px;
+            border-bottom: 1px solid #DEDEDE; }
+            #container .special .container .right .carousel .pages li dl:last-child {
+              border: none; }
+            #container .special .container .right .carousel .pages li dl dt {
+              margin-right: 20px; }
+              #container .special .container .right .carousel .pages li dl dt:hover {
+                opacity: .6; }
+            #container .special .container .right .carousel .pages li dl dd {
+              width: 130px; }
+              #container .special .container .right .carousel .pages li dl dd a {
+                display: block;
+                font-size: 12px;
+                color: #999;
+                line-height: 20px; }
+                #container .special .container .right .carousel .pages li dl dd a:hover {
+                  text-decoration: underline; }
+              #container .special .container .right .carousel .pages li dl dd .curPrice {
+                color: #e91b51;
+                font-size: 18px;
+                font-weight: bolder; }
+              #container .special .container .right .carousel .pages li dl dd .prePrice {
+                color: #BEBEBE;
+                text-decoration: line-through; }
+        #container .special .container .right .carousel .circles {
+          display: flex;
+          justify-content: center;
           position: absolute;
-          bottom: 0;
+          bottom: 20px;
           left: 0;
           right: 0;
           margin: 0 auto; }
-  #container .special .container .right {
-    box-sizing: border-box;
-    padding: 20px;
-    float: left; }
-    #container .special .container .right h3 {
-      margin: 10px 0; }
-    #container .special .container .right ul li {
-      width: 300px; }
-      #container .special .container .right ul li dl dt {
-        float: left; }
-      #container .special .container .right ul li dl dd {
-        float: left; }
-        #container .special .container .right ul li dl dd p {
-          font-size: 14px; }
+          #container .special .container .right .carousel .circles span {
+            float: left;
+            display: block;
+            height: 8px;
+            width: 8px;
+            border-radius: 8px;
+            background: #DEDEDE;
+            margin: 0 5px; }
+          #container .special .container .right .carousel .circles .current {
+            background: #666666; }
+  #container .special .brand {
+    margin: 14px 0;
+    border: 1px solid #DEDEDE; }
+    #container .special .brand ul {
+      overflow: hidden;
+      background: white; }
+      #container .special .brand ul li {
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 14px;
+        position: relative;
+        margin: 0 6px; }
+        #container .special .brand ul li:first-child {
+          height: 108px;
+          width: 108px; }
+        #container .special .brand ul li a {
+          text-decoration: none; }
+        #container .special .brand ul li .mark {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          display: none; }
+          #container .special .brand ul li .mark i {
+            color: #e91b51; }
+        #container .special .brand ul li:hover .mark {
+          display: block; }
